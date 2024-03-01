@@ -1,4 +1,4 @@
-![Application screenshot](./public/ss.png)
+![Application screenshot](./public/screenshot.png)
 
 <br/>
 <br/>
@@ -8,6 +8,10 @@ With [The Weather Forecasting](https://the-weather-forecasting.netlify.app) user
 The app is developed using React.js and material-UI.
 
 <br/>
+
+## 💻 Live Demo:
+
+https://the-weather-forecasting.netlify.app
 
 <br/>
 
@@ -25,7 +29,7 @@ The app is developed using React.js and material-UI.
 - Clone the repository:
 
 ```bash
-git clone https://github.com/Anshul16729/aminawinti-the-weather-forecast.git
+git clone https://github.com/Amin-Awinti/the-weather-forecasting.git
 
 ```
 

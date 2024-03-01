@@ -1,13 +1,13 @@
-const GEO_API_URL = "https://wft-geo-db.p.rapidapi.com/v1/geo";
+const GEO_API_URL = 'https://wft-geo-db.p.rapidapi.com/v1/geo';
 
-const WEATHER_API_URL = "https://api.openweathermap.org/data/2.5";
-const WEATHER_API_KEY = "c19a178f93408f4e48150a7f38397bac";
+const WEATHER_API_URL = 'https://api.openweathermap.org/data/2.5';
+const WEATHER_API_KEY = 'Your API KEY';
 
 const GEO_API_OPTIONS = {
-  method: "GET",
+  method: 'GET',
   headers: {
-    "X-RapidAPI-Key": "4f0dcce84bmshac9e329bd55fd14p17ec6fjsnff18c2e61917",
-    "X-RapidAPI-Host": "wft-geo-db.p.rapidapi.com",
+    'X-RapidAPI-Key': '4f0dcce84bmshac9e329bd55fd14p17ec6fjsnff18c2e61917',
+    'X-RapidAPI-Host': 'wft-geo-db.p.rapidapi.com',
   },
 };
 
@@ -42,23 +42,5 @@ export async function fetchCities(input) {
   } catch (error) {
     console.log(error);
     return;
-  }
-}
-
-const options = {
-  method: "GET",
-  url: "https://open-weather13.p.rapidapi.com/city/fivedaysforcast/30.438/-89.1028",
-  headers: {
-    "X-RapidAPI-Key": "22b2234109msh63555a57d9b85bdp11a1c4jsn028e87ac2484",
-    "X-RapidAPI-Host": "open-weather13.p.rapidapi.com",
-  },
-};
-
-export async function fetchInCities() {
-  try {
-    const response = await fetch(options);
-    return response.data;
-  } catch (error) {
-    console.error(error);
   }
 }

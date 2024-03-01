@@ -1,20 +1,20 @@
-import { Typography } from "@mui/material";
-import React from "react";
-import { getIndianDatetime } from "../../utilities/DatetimeUtils";
+import { Typography } from '@mui/material';
+import React from 'react';
+import { getUTCDatetime } from '../../utilities/DatetimeUtils';
 
 const UTCDatetime = () => {
-  const utcFullDate = getIndianDatetime();
+  const utcFullDate = getUTCDatetime();
   const utcTimeValue = (
     <Typography
       variant="h3"
       component="h3"
       sx={{
-        fontWeight: "400",
-        fontSize: { xs: "10px", sm: "12px" },
-        color: "rgba(255, 255, 255, .7)",
+        fontWeight: '400',
+        fontSize: { xs: '10px', sm: '18px' },
+        color: 'rgba(255, 255, 255, .7)',
         lineHeight: 1,
-        paddingRight: "2px",
-        fontFamily: "Poppins",
+        paddingRight: '2px',
+        fontFamily: 'Poppins',
       }}
     >
       {utcFullDate} GMT
